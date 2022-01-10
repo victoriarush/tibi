@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    border: 2px solid rgb(220,220,220)
+}
+
+
+
+/* universal styles */
+
+body { 
+    font-family: "Noto Sans HK", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* utility classes */
+
+.center { text-align: center;}
+.left   { text-align: left;}
+.right  { text-align: right;}
+
+.padded-05  {  padding: 0.5rem; }
+.padded-1   {  padding: 1rem;   }
+.padded-2   {  padding: 2rem;   }
