@@ -5,26 +5,21 @@
 }
 
 * {
-    border: 2px solid rgb(220,220,220)
+    /* border: 2px solid rgb(220,220,220) */
 }
 
 
 
 /* universal styles */
 
-body { 
-    font-family: "Noto Sans HK", sans-serif;
-}
 
-a {
-    text-decoration: none;
-    border-bottom: 1px solid;
-    color: inherit;
+section {
+    padding: 5vw;
 }
 
 img {
     max-width: 100%;
-}
+  }
 
 /* utility classes */
 
@@ -35,3 +30,122 @@ img {
 .padded-05  {  padding: 0.5rem; }
 .padded-1   {  padding: 1rem;   }
 .padded-2   {  padding: 2rem;   }
+
+.landscape  {  padding-bottom: 60%; }
+
+[class*="grid-"], [class*="grid_"], [class~="grid"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -.5rem;
+  }
+
+  [class*="col-"], [class*="col_"], [class~="col"] {
+      padding: 0;
+  }
+
+/* typography */
+
+body { 
+    font-family: "Noto Sans HK", sans-serif;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 5vw;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: inherit;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 0;
+    font-weight: normal;
+}
+
+span { 
+    font-size: 2.8rem;
+    color:rgb(39, 39, 39);
+    font-weight: lighter;
+}
+
+h2 {
+    color:rgb(87, 82, 82);
+    font-size: 1.4rem;
+    
+}
+
+
+
+
+/* images */
+.banner {
+    background-color: rgb(235,235,235);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url('/images/tibi.jpg');
+}
+
+.img-2 {
+    background-image: url('/images/baking\ action.jpg');
+}
+.img-3 {
+    background-image: url('/images/cake.jpg');
+}
+.img-4 {
+    background-image: url('/images/ginger\ cookies.jpg');
+}
+.img-5 {
+    background-image: url('/images/pancakes\ dark.jpg');
+}
+.img-6 {
+    background-image: url('/images/pumpkin.jpg');
+}
+.img-7 {
+    background-image: url('/images/soup.jpg');
+}
+.img-8 {
+    background-image: url('/images/strudel.jpg');
+}
+.img-9 {
+    background-image: url('/images/tea\ biscuits.jpg');
+}
+
+
+.bg-flower {
+  background-image: url('/images/flower.jpg')
+
+}
+
+/*  HEADER STYLES*/
+header nav { 
+    border-top: 2px solid rgb(82, 72, 72);
+    border-bottom: 2px solid rgb(82, 72, 72);
+    padding: 2vw 3vw;
+    font-size: 1.1rem;
+}
+
+header a {
+    padding: 1vw 3vw;
+    border-bottom: 0 solid;
+    font-family: 'Goudy Bookletter 1911', serif;
+    color:rgb(39, 39, 39);
+} 
+
+
+
+nav a:hover {
+    color: lightgrey;
+}
+
