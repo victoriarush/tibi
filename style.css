@@ -7,6 +7,14 @@
 * {
     /* border: 2px solid rgb(220,220,220) */
 }
+[class*="grid-"], [class*="grid_"], [class~="grid"],.grid { 
+    margin: 0;
+}
+  
+
+  [class*="col-"], [class*="col_"], [class~="col"] {
+      padding: 0;
+  }
 
 
 
@@ -27,29 +35,32 @@ img {
 .left   { text-align: left;}
 .right  { text-align: right;}
 
+
+.padded-0   {  padding: 0;}
 .padded-05  {  padding: 0.5rem; }
 .padded-1   {  padding: 1rem;   }
 .padded-2   {  padding: 2rem;   }
+.padded-5px {  padding: 5px;    }
+
+.margin-bottom      { margin-bottom: 5vw;}
+.margin-bs    { margin-bottom: 2.5vw;}   
 
 .landscape  {  padding-bottom: 60%; }
+.portrait   {  padding-bottom: 130%; }
 
-[class*="grid-"], [class*="grid_"], [class~="grid"] {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 -.5rem;
-  }
+.tall-50    { min-height: 50vh;}
+.tall-60    { min-height: 60vh;}    
+.tall-70    { min-height: 70vh;}
+.tall-80    { min-height: 80vh;}
+.tall-90    { min-height: 90vh;}
+.tall-100   { min-height: 100vh}
 
-  [class*="col-"], [class*="col_"], [class~="col"] {
-      padding: 0;
-  }
 
 /* typography */
 
 body { 
     font-family: "Noto Sans HK", sans-serif;
     font-family: 'Goudy Bookletter 1911', serif;
-    margin: 5vw;
 }
 
 a {
@@ -60,13 +71,14 @@ a {
 
 header h1{
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 0;
     font-weight: normal;
+    margin-top: 5vw;
 }
 
-span { 
-    font-size: 2.8rem;
+h3 { 
+    font-size: 1.5rem;
     color:rgb(39, 39, 39);
     font-weight: lighter;
 }
@@ -74,59 +86,66 @@ span {
 h2 {
     color:rgb(87, 82, 82);
     font-size: 1.4rem;
+    margin-bottom: 1em;
     
 }
 
-
+p {
+    margin-bottom: 2em;
+    line-height: 1.4rem;
+}
 
 
 /* images */
-.banner {
+    
+
+.img {
     background-color: rgb(235,235,235);
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
-}
-
-.img {
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .img-1 {
     background-image: url('/images/tibi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .img-2 {
-    background-image: url('/images/baking\ action.jpg');
+    background-image: url('/images/siv.jpg');
 }
 .img-3 {
-    background-image: url('/images/cake.jpg');
-}
-.img-4 {
     background-image: url('/images/ginger\ cookies.jpg');
 }
+.img-4 {
+    background-image: url('/images/coffee.jpg');
+}
 .img-5 {
-    background-image: url('/images/pancakes\ dark.jpg');
+    background-image: url('/images/blissballs.jpg');
 }
 .img-6 {
-    background-image: url('/images/pumpkin.jpg');
+    background-image: url('/images/macaroons.jpg');
 }
 .img-7 {
-    background-image: url('/images/soup.jpg');
+    background-image: url('/images/oldschool.jpg');
 }
 .img-8 {
-    background-image: url('/images/strudel.jpg');
+    background-image: url('/images/flapjack.jpg');
 }
-.img-9 {
-    background-image: url('/images/tea\ biscuits.jpg');
+.img-9 { 
+    background-image: url('/images/greens.jpg');
 }
-
-
-.bg-flower {
-  background-image: url('/images/flower.jpg')
-
+.img-10 {
+    background-image: url('/images/flower.jpg');
 }
+.img-11 {
+    background-image: url('/images/map.png');
+}
+.grayscaled{
+    filter: grayscale(1);
+    }
 
 /*  HEADER STYLES*/
 header nav { 
@@ -142,8 +161,6 @@ header a {
     font-family: 'Goudy Bookletter 1911', serif;
     color:rgb(39, 39, 39);
 } 
-
-
 
 nav a:hover {
     color: lightgrey;
