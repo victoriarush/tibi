@@ -105,14 +105,9 @@ p {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .img-1 {
     background-image: url('/images/tibi.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-
 .img-2 {
     background-image: url('/images/siv.jpg');
 }
