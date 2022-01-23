@@ -48,6 +48,7 @@ img {
 .landscape  {  padding-bottom: 60%; }
 .portrait   {  padding-bottom: 130%; }
 
+.tall-40    { min-height: 40vh;}
 .tall-50    { min-height: 50vh;}
 .tall-60    { min-height: 60vh;}    
 .tall-70    { min-height: 70vh;}
@@ -133,10 +134,10 @@ p {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/flower.jpg');
+    background-image: url('/images/bwocean.jpg');
 }
 .img-11 {
-    background-image: url('/images/map.png');
+    background-image: url('/images/lightmap.png');
 }
 .grayscaled{
     filter: grayscale(1);
