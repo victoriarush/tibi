@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<!-- head of html -->
+
 <html>
+    <!-- head of html -->
 
 <head>
+    <!-- The title for SEO & browser tabs -->
+    <title> Tibi's Kitchen </title>
+
+    <!-- Viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
@@ -23,22 +30,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
 
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="style.css"> </head> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
     
+
     <!-- body - where all content goes -->
 
 <body>
 
     <!-- HEADER & ABOUT MENU -->
 
-    <header class="center margin-bottom grid-center">
-        <a class="col-12" href="/">
-            <h1 class="logo padded-1">  Tibi 
-            </h1>
-            <h3 class= "logo padded-1 margin-bs"> gluten-free kitchen </h3>
-        </a>
-
-
+    <header class="grid-center">
+        <div class="col-2"> </div>
+        <div class="col-8 center logo padded-1">
+            <a href="/">
+                <h1>  logo
+                </h1>
+            </a>
+        </div>
+        <div class="col-2 right">
+            <a class="hamburger-button"> &ne; </a>
+        </div>
         
             <nav class="">
                 <a href="#"> about </a>
@@ -48,13 +60,33 @@
                 <a href="#"> events </a>
                 <a href="#"> contact </a>
             </nav>
+
+         <div class="left-menu"> 
+            <nav> 
+                <a href="#"> about </a>
+                <a href="#"> our world </a>
+                <a href="#"> menu </a>
+                <a href="#"> catering </a>
+            </nav>
+        </div> 
+
+        <div class="right-menu"> 
+            <nav> 
+                <a href="#"> events </a>
+                <a href="#"> contact </a>
+            </nav>
+        </div>
        
+        
+        <div class="drop-menu"> 
+                <a href="#"> X </a> 
+        </div>
     </header> 
 
 
-    <!-- BANNER PICTURE/MISSION/OFFERINGS -->
+    <!-- BANNER PICTURE -->
 
-    <section class="grid img-10 img margin-bottom tall-60">
+    <section class="grid img-10 img tall-70">
         <div class="col-5_sm-12">
             <!-- <h2> making gluten-free delicious </h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -63,6 +95,16 @@
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error natus, nam rerum quas accusamus debitis velit doloremque suscipit alias sapiente porro sunt? Possimus ut totam, facilis ipsam esse vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore temporibus quo aliquam blanditiis reiciendis officiis fuga quaerat! Culpa voluptates non, a adipisci omnis explicabo ratione sint placeat qui vero illo.</p>
         </div> -->
         <div class="col-7_sm-12">
+        </div>
+    </section>
+
+    <!-- BANNER/MISSION - -->
+
+    <section class="padded-5 bgcolor center img grid tall-60">
+        <div class="col-12-middle">
+            <h3> Our philosophy </h3>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, explicabo accusantium deserunt nihil sequi debitis sapiente </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem explicabo deleniti pariatur vel <br> culpa exercitationem at, aspernatur consectetur tempore. Sequi amet at enim eveniet tenetur provident voluptatem facere nisi.</p>
         </div>
     </section>
 
@@ -120,12 +162,20 @@
         </div>
         </section>
 
-        <!-------map----- -->
-        <section class="tall-60 img img-11"> 
+
+
+
+        <!-- -----map----- -->
+        <!-- <section class="tall-60 img img-11"> 
         
-        </section> -->
+        </section> --> --> -->
 
+    
 
+        <!-- jQuery  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script src="/main.js"></script>
 
 
 

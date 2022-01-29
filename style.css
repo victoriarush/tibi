@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+images {
+    max-width: 100%;
+}
+
 * {
     /* border: 2px solid rgb(220,220,220) */
 }
@@ -25,9 +29,18 @@ section {
     padding: 5vw;
 }
 
-img {
-    max-width: 100%;
-  }
+header {
+    padding: 5vw;
+}
+
+footer {
+    padding: 5vw;
+}
+
+html {
+    font-size: 16px;
+}
+
 
 /* utility classes */
 
@@ -43,7 +56,8 @@ img {
 .padded-5px {  padding: 5px;    }
 
 .margin-bottom      { margin-bottom: 5vw;}
-.margin-bs    { margin-bottom: 2.5vw;}   
+.margin-bs          { margin-bottom: 2.5vw;}   
+.margin-bl          { margin-bottom: 10vw;} 
 
 .landscape  {  padding-bottom: 60%; }
 .portrait   {  padding-bottom: 130%; }
@@ -56,12 +70,18 @@ img {
 .tall-90    { min-height: 90vh;}
 .tall-100   { min-height: 100vh}
 
+.grayscaled{filter: grayscale(1);}
+.sepiatone {filter: sepia(.5);}
+
+.bgcolor  { background-color: silver};
+
+
 
 /* typography */
 
 body { 
     font-family: "Noto Sans HK", sans-serif;
-    font-family: 'Goudy Bookletter 1911', serif;
+    /* font-family: 'Goudy Bookletter 1911', serif; */
 }
 
 a {
@@ -70,18 +90,24 @@ a {
     color: inherit;
 }
 
-header h1{
-    text-transform: uppercase;
-    font-size: 5rem;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+h1{
+    font-size: 2.5rem;
     line-height: 0;
-    font-weight: normal;
-    margin-top: 5vw;
+    font-weight: 200;
+    margin-top: 3vw;
+    display: inline-block;
 }
 
 h3 { 
     font-size: 1.5rem;
     color:rgb(39, 39, 39);
     font-weight: lighter;
+    margin-bottom: 2em;
 }
 
 h2 {
@@ -97,10 +123,15 @@ p {
 }
 
 
+
+
+
+
+
 /* images */
     
 
-.img {
+[class*=img] {
     background-color: rgb(235,235,235);
     background-size: cover;
     background-position: center;
@@ -139,16 +170,22 @@ p {
 .img-11 {
     background-image: url('/images/lightmap.png');
 }
-.grayscaled{
-    filter: grayscale(1);
-    }
+
+.img-12 {
+    background-image: url('/images/leaf.jpg');
+}
+
+.img-13 {
+    background-image: url('/images/jellyfish.jpg')
+}
+
 
 /*  HEADER STYLES*/
 header nav { 
-    border-top: 2px solid rgb(82, 72, 72);
-    border-bottom: 2px solid rgb(82, 72, 72);
+    /* border-top: 2px solid rgb(82, 72, 72);
+    border-bottom: 2px solid rgb(82, 72, 72); */
     padding: 2vw 3vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 header a {
@@ -161,4 +198,108 @@ header a {
 nav a:hover {
     color: lightgrey;
 }
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 1.8;
+    position: fixed;
+    right: calc(5vw + .7rem);
+    top: calc(5vw + .7rem);
+    z-index: 2;
+  }
+
+/* Styles when the hamburger button is active  */
+
+.hamburger-button.active {
+    color: rgb(169, 174, 177);
+  }
+
+
+  .left-menu { 
+    background-color: rgb(17, 17, 17); 
+    padding: 5%;
+    position: fixed; 
+    top:0;
+    bottom:0;
+    left:-100vw;
+    right:100vw;
+    text-align: center;
+    transition: .5s;
+    border: 2px solid rgba(0,0,0,0);
+  }
+
+  .right-menu {
+    background-color: rgb(17, 17, 17); 
+    padding: 5%;
+    position: fixed; 
+    top:0;
+    bottom:0;
+    left:100vw;
+    right:-100vw;
+    text-align: center;
+    transition: .5s;
+    border: 2px solid rgba(0,0,0,0);
+  }
+
+  .drop-menu {
+      border: 1px solid rgb(202, 66, 66);
+      border-radius: 150%;
+      padding: 3.5rem 1rem;
+      top:-100vh;
+      transition: .5s;
+      display: none;
+  }
+
+.right-menu a, .left-menu a, {
+    display: block;
+    color: white;
+    letter-spacing: 1px;
+    transition: 1s;
+    font-size: 2rem;
+}
+
+.right-menu a:hover, .left-menu a:hover {
+    letter-spacing: 5px;
+}
+
+.left-menu.active {
+    left: 0;
+    right: 50vw;
+    width: 50vw;
+    border: 2px solid rgba(0,0,0,.5);
+  }
+
+  .right-menu.active {
+    left: 50vw;
+    right: 0;
+    width: 50vw;
+    border: 2px solid rgba(0,0,0,0.5);
+  }
+
+  .drop-menu.active {
+     top: 50vh;
+     bottom: 50vh;
+     border: 1px solid white;
+     border-radius: 100%;
+  }
+
+
+
+
+
+
+
+
+
+  /* ----media queries last----- */
+  
+
+  
+  
+
+  
 
