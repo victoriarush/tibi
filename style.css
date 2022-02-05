@@ -1,4 +1,23 @@
+/* colours
+Browns darkest to light
+#582F0E 
+#7F4F24
+#936639
+#A68A64
+
+green - d to l
+#333D29
+#414833
+#656D4A
+#A4AC86
+#C2C5AA
+#B6AD90
+*/
+
+
+
 * {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -70,10 +89,25 @@ html {
 .tall-90    { min-height: 90vh;}
 .tall-100   { min-height: 100vh}
 
-.grayscaled{filter: grayscale(1);}
+.grayscaled{filter: grayscale(9);}
 .sepiatone {filter: sepia(.5);}
 
-.bgcolor  { background-color: silver};
+.bglightbrown   { background-color: #A68A64; }
+.bgolive        { background-color: #414833; }
+.bgbisque       { background-color: #F1DABF; }
+.bgblue         { background-color: #75B8C8; }
+.bgblackbean    { background-color: #2E0E02; }
+.bgfuzzywuzzy   { background-color: #C1666B; }
+.bgcharcoal     { background-color: #2F4550; }
+.bgdarkbrown    { background-color: #582F0E; }
+.bgmediumbrown  { background-color: #7F4F24; }
+.bglighterbrown { background-color: #936639; }
+.bglightbrown   { background-color: #A68A64; }
+.bglightgreen   { background-color: #A4AC86; }
+.bglightergreen { background-color: #656D4A; }
+.bgmedgreen     { background-color: #414833; }
+.bgdarkgreen    { background-color: #333D29; }
+
 
 
 
@@ -101,11 +135,12 @@ h1{
     font-weight: 200;
     margin-top: 3vw;
     display: inline-block;
+    color: #2E0E02;
 }
 
 h3 { 
     font-size: 1.5rem;
-    color:rgb(39, 39, 39);
+    color: #414833F;
     font-weight: lighter;
     margin-bottom: 2em;
 }
@@ -120,6 +155,7 @@ h2 {
 p {
     margin-bottom: 2em;
     line-height: 1.4rem;
+    color: #F1DABF;
 }
 
 
@@ -165,22 +201,27 @@ p {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/bwocean.jpg');
+    background-image: url('/images/tibione.jpg');
 }
 .img-11 {
-    background-image: url('/images/lightmap.png');
+    background-image: url('/images/tibitwo.png');
 }
 
 .img-12 {
-    background-image: url('/images/leaf.jpg');
+    background-image: url('/images/tibithree.jpg');
 }
 
 .img-13 {
-    background-image: url('/images/jellyfish.jpg')
+    background-image: url('/images/tibifour.jpg')
 }
 
 
 /*  HEADER STYLES*/
+
+header {
+    background-color: #E4C2B5;
+}
+
 header nav { 
     /* border-top: 2px solid rgb(82, 72, 72);
     border-bottom: 2px solid rgb(82, 72, 72); */
@@ -210,17 +251,18 @@ nav a:hover {
     right: calc(5vw + .7rem);
     top: calc(5vw + .7rem);
     z-index: 2;
+    color: #2E0E02;
   }
 
 /* Styles when the hamburger button is active  */
 
 .hamburger-button.active {
-    color: rgb(169, 174, 177);
+    color:#503a2f;
   }
 
 
   .left-menu { 
-    background-color: rgb(17, 17, 17); 
+    background-color: #414833;
     padding: 5%;
     position: fixed; 
     top:0;
@@ -233,7 +275,7 @@ nav a:hover {
   }
 
   .right-menu {
-    background-color: rgb(17, 17, 17); 
+    background-color: #414833;
     padding: 5%;
     position: fixed; 
     top:0;
@@ -246,23 +288,28 @@ nav a:hover {
   }
 
   .drop-menu {
-      border: 1px solid rgb(202, 66, 66);
+      border: 2px solid rgb(240, 237, 237);
       border-radius: 150%;
-      padding: 3.5rem 1rem;
+      padding: 5.5rem 2rem;
       top:-100vh;
+      bottom: 100vh;
       transition: .5s;
-      display: none;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
-.right-menu a, .left-menu a, {
+.right-menu a, .left-menu a {
     display: block;
-    color: white;
-    letter-spacing: 1px;
+    color:white ;
+    letter-spacing: 1.5px;
     transition: 1s;
-    font-size: 2rem;
+    font-size: 3.7rem;
 }
 
-.right-menu a:hover, .left-menu a:hover {
+
+.left-menu a:hover {
     letter-spacing: 5px;
 }
 
@@ -271,6 +318,7 @@ nav a:hover {
     right: 50vw;
     width: 50vw;
     border: 2px solid rgba(0,0,0,.5);
+
   }
 
   .right-menu.active {
@@ -280,11 +328,21 @@ nav a:hover {
     border: 2px solid rgba(0,0,0,0.5);
   }
 
+  .right-menu a:hover {
+      color:  	#503a2f;
+  }
+
   .drop-menu.active {
-     top: 50vh;
-     bottom: 50vh;
-     border: 1px solid white;
+     top: 50%;
+     bottom: 50%;
+     border: 2px solid white;
      border-radius: 100%;
+     left: 43%;
+  }
+
+  .drop-menu a {
+      font-size: 4rem;
+      color: white;
   }
 
 
