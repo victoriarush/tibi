@@ -131,19 +131,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 0;
     font-weight: 200;
     margin-top: 3vw;
     display: inline-block;
-    color: #F1DABF;
+    /* color: #F1DABF; */
+    color: #f9f0e5;
 }
 
 h3 { 
     font-size: 1.5rem;
-    color: #414833F;
     font-weight: lighter;
     margin-bottom: 2em;
+    color: whitesmoke ;
 }
 
 h2 {
@@ -156,7 +157,7 @@ h2 {
 p {
     margin-bottom: 2em;
     line-height: 1.4rem;
-    color: #F1DABF;
+    color: whitesmoke;
 }
 
 
@@ -202,7 +203,7 @@ p {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/waiheke.jpg');
+    background-image: url('/images/moodyocean.jpg');
 }
 .img-11 {
     background-image: url('/images/tibitwo.png');
@@ -251,20 +252,20 @@ header a {
     position: fixed;
     right: calc(5vw + .7rem);
     top: calc(5vw + .7rem);
-    z-index: 2;
-    color: #F1DABF;
+    z-index: 1;
+    /* color: #F1DABF; */
+    color: #f9f0e5;
   }
 
 /* Styles when the hamburger button is active  */
 
 .hamburger-button.active {
-    color:#A68A64;
-    transition: 1s;
+    color:#f9f0e5;
   }
 
-.hamburger-button a:hover {
+/* .hamburger-button a:hover {
     color: #c0ad92;
-}
+} */
 
 
   .left-menu { 
@@ -331,7 +332,7 @@ header a {
 
   }
 
-  .right-menu.active {
+.right-menu.active {
     left: 50vw;
     right: 0;
     width: 50vw;
@@ -339,10 +340,8 @@ header a {
     z-index: 1;
   }
 
-  .right-menu a:hover {
-      color: #dad6c7;
-
-      ; 
+.right-menu a:hover {
+      color: #dad6c7;    
   }
 
   .drop-menu.active {
@@ -350,8 +349,6 @@ header a {
      bottom: 50%;
      left: calc(47vw - 4.7rem);
      z-index: 1;
-     
-
   }
 
   .drop-menu a {
