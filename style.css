@@ -107,6 +107,7 @@ html {
 .bglightergreen { background-color: #656D4A; }
 .bgmedgreen     { background-color: #414833; }
 .bgdarkgreen    { background-color: #333D29; }
+.bglitegreen    { background-color: #B6AD90; }
 
 
 
@@ -135,7 +136,7 @@ h1{
     font-weight: 200;
     margin-top: 3vw;
     display: inline-block;
-    color: #2E0E02;
+    color: #F1DABF;
 }
 
 h3 { 
@@ -201,7 +202,7 @@ p {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/tibione.jpg');
+    background-image: url('/images/waiheke.jpg');
 }
 .img-11 {
     background-image: url('/images/tibitwo.png');
@@ -236,9 +237,9 @@ header a {
     color:rgb(39, 39, 39);
 } 
 
-nav a:hover {
+/* nav a:hover {
     color: lightgrey;
-}
+} */
 
 .hamburger-button {
     cursor: pointer;
@@ -251,14 +252,19 @@ nav a:hover {
     right: calc(5vw + .7rem);
     top: calc(5vw + .7rem);
     z-index: 2;
-    color: #2E0E02;
+    color: #F1DABF;
   }
 
 /* Styles when the hamburger button is active  */
 
 .hamburger-button.active {
-    color:#503a2f;
+    color:#A68A64;
+    transition: 1s;
   }
+
+.hamburger-button a:hover {
+    color: #c0ad92;
+}
 
 
   .left-menu { 
@@ -272,6 +278,7 @@ nav a:hover {
     text-align: center;
     transition: .5s;
     border: 2px solid rgba(0,0,0,0);
+    z-index: 8;
   }
 
   .right-menu {
@@ -285,10 +292,10 @@ nav a:hover {
     text-align: center;
     transition: .5s;
     border: 2px solid rgba(0,0,0,0);
+    z-index: 8;
   }
 
   .drop-menu {
-      border: 2px solid rgb(240, 237, 237);
       border-radius: 150%;
       padding: 5.5rem 2rem;
       top:-100vh;
@@ -298,11 +305,12 @@ nav a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 8;
   }
 
 .right-menu a, .left-menu a {
     display: block;
-    color:white ;
+    color: #B6AD90; 
     letter-spacing: 1.5px;
     transition: 1s;
     font-size: 3.7rem;
@@ -311,6 +319,7 @@ nav a:hover {
 
 .left-menu a:hover {
     letter-spacing: 5px;
+    color: #dad6c7; 
 }
 
 .left-menu.active {
@@ -318,6 +327,7 @@ nav a:hover {
     right: 50vw;
     width: 50vw;
     border: 2px solid rgba(0,0,0,.5);
+    z-index: 1;
 
   }
 
@@ -326,25 +336,33 @@ nav a:hover {
     right: 0;
     width: 50vw;
     border: 2px solid rgba(0,0,0,0.5);
+    z-index: 1;
   }
 
   .right-menu a:hover {
-      color:  	#503a2f;
+      color: #dad6c7;
+
+      ; 
   }
 
   .drop-menu.active {
-     top: 50%;
+     top: calc(49vh - 5.5rem);
      bottom: 50%;
-     border: 2px solid white;
-     border-radius: 100%;
-     left: 43%;
+     left: calc(47vw - 4.7rem);
+     z-index: 1;
+     
+
   }
 
   .drop-menu a {
-      font-size: 4rem;
-      color: white;
+      font-size: 8rem;
+      color: #A68A64;
+      transition: 1s;
   }
 
+  .drop-menu a:hover {
+      color: #c0ad92;
+  }
 
 
 
