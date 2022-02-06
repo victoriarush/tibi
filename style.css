@@ -106,7 +106,8 @@ html {
 .bglightgreen   { background-color: #A4AC86; }
 .bglightergreen { background-color: #656D4A; }
 .bgmedgreen     { background-color: #414833; }
-.bgdarkgreen    { background-color: #333D29; }
+/* .bgdarkgreen    { background-color: #333D29; } */
+.bgdarkgreen    { background-color: #5b6353; }
 .bglitegreen    { background-color: #B6AD90; }
 
 
@@ -320,7 +321,8 @@ header a {
 
 .left-menu a:hover {
     letter-spacing: 5px;
-    color: #dad6c7; 
+    /* color: #dad6c7;  */
+    color: #A68A64;
 }
 
 .left-menu.active {
@@ -341,7 +343,8 @@ header a {
   }
 
 .right-menu a:hover {
-      color: #dad6c7;    
+      /* color: #dad6c7;  */
+      color: #A68A64;   
   }
 
   .drop-menu.active {
@@ -358,7 +361,8 @@ header a {
   }
 
   .drop-menu a:hover {
-      color: #c0ad92;
+      /* color: #c0ad92; */
+      color: #746046;
   }
 
 
