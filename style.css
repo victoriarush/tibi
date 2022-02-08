@@ -81,6 +81,7 @@ html {
 .landscape  {  padding-bottom: 60%; }
 .portrait   {  padding-bottom: 130%; }
 
+.tall-20    { min-height: 20vh;}
 .tall-40    { min-height: 40vh;}
 .tall-50    { min-height: 50vh;}
 .tall-60    { min-height: 60vh;}    
@@ -107,8 +108,43 @@ html {
 .bglightergreen { background-color: #656D4A; }
 .bgmedgreen     { background-color: #414833; }
 /* .bgdarkgreen    { background-color: #333D29; } */
-.bgdarkgreen    { background-color: #5b6353; }
+.bgdarkgreen    { background-color: #666c5b; }
 .bglitegreen    { background-color: #B6AD90; }
+
+.textadd {
+    /* color: #A68A64; */
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 10vw;
+
+}
+
+.textmission {
+    color: whitesmoke;
+    margin-bottom: 2em;
+    line-height: 1.2;
+}
+.social-banner { 
+    background-position: 50% 17%;
+    background-image: none; 
+    background-color: #414833;
+    min-height: 30vh;
+
+}
+
+.social-banner a {
+    border-bottom: 0px solid;
+}
+
+.fab {
+    font-size: 3.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2em;
+    text-align: center;
+}
+
 
 
 
@@ -140,26 +176,36 @@ h1{
     /* color: #F1DABF; */
     color: #f9f0e5;
 }
-
-h3 { 
+ 
+ h3 { 
     font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 2em;
     color: whitesmoke ;
-}
+} 
 
 h2 {
     color:rgb(87, 82, 82);
     font-size: 1.4rem;
     margin-bottom: 1em;
-    
+    font-weight: lighter;
 }
 
+h4 {
+    color: whitesmoke;
+    font-size: 3rem;
+    padding-top: 3rem;
+
+}
+/* 
 p {
     margin-bottom: 2em;
     line-height: 1.4rem;
-    color: whitesmoke;
-}
+    /* color: whitesmoke; }
+    */
+
+
+
 
 
 
@@ -215,7 +261,7 @@ p {
 }
 
 .img-13 {
-    background-image: url('/images/tibifour.jpg')
+    background-image: url('/images/putiki.png')
 }
 
 
