@@ -114,6 +114,7 @@ html {
 .bglitegreen    { background-color: #B6AD90; }
 .bgslategrey    { background-color: #54686A; }
 .bgdarkergrey   { background-color: #3D5254; }
+.bgashgrey      { background-color: #A9B2AC;}
 
 
 .textadd {
@@ -191,6 +192,7 @@ h1{
     /* color: #f9f0e5; */
     /* color: #4E6064; */
     color: #516367;
+    color: #3D5254;
 }
  
  h3 { 
@@ -300,8 +302,8 @@ header a {
     cursor: pointer;
     padding: 0.5rem;
     display: inline-block;
-    font-weight: 600;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 3rem;
     line-height: 1.8;
     position: fixed;
     right: calc(5vw + .7rem);
@@ -312,6 +314,7 @@ header a {
     color: #516367;
     color: #C4D0D4;
     color: #E7ECEE;
+    color: #627579;
     
   }
 
