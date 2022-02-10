@@ -26,10 +26,10 @@ green - d to l
 images {
     max-width: 100%;
 }
-
+/* 
 * {
-    /* border: 2px solid rgb(220,220,220) */
-}
+    border: 2px solid rgb(220,220,220)
+} */
 [class*="grid-"], [class*="grid_"], [class~="grid"],.grid { 
     margin: 0;
 }
@@ -73,6 +73,7 @@ html {
 .padded-1   {  padding: 1rem;   }
 .padded-2   {  padding: 2rem;   }
 .padded-5px {  padding: 5px;    }
+.padded-bottom-5w { padding-bottom: 5vw; }
 
 .margin-bottom      { margin-bottom: 5vw;}
 .margin-bs          { margin-bottom: 2.5vw;}   
@@ -80,7 +81,9 @@ html {
 
 .landscape  {  padding-bottom: 60%; }
 .portrait   {  padding-bottom: 130%; }
+.square     {  padding-bottom: 100%; }
 
+.tall-10   { min-height: 10vh;}
 .tall-20    { min-height: 20vh;}
 .tall-40    { min-height: 40vh;}
 .tall-50    { min-height: 50vh;}
@@ -116,12 +119,11 @@ html {
     color: whitesmoke;
     font-size: 1rem;
     line-height: 1.6;
-    padding-left: 10vw;
-
+    padding-left: 5vw;
 }
 
 .textmission {
-    color: whitesmoke;
+    color: #516367;
     margin-bottom: 2em;
     line-height: 1.2;
 }
@@ -134,15 +136,21 @@ html {
 }
 
 .social-banner a {
-    border-bottom: 0px solid;
+    border-bottom: 0px solid;  
+    padding: 1.75vw; 
 }
+
+
 
 .fab {
     font-size: 3.5rem;
     color: whitesmoke;
     text-decoration: none;
-    letter-spacing: 2em;
     text-align: center;
+}
+
+.social-banner a:hover .fab {
+    color: #A68A64;
 }
 
 
@@ -168,20 +176,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height: 0;
-    font-weight: 200;
+    font-weight: 500;
     margin-top: 3vw;
     display: inline-block;
     /* color: #F1DABF; */
-    color: #f9f0e5;
+    /* color: #f9f0e5; */
+    /* color: #4E6064; */
+    color: #516367;
 }
  
  h3 { 
     font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 2em;
-    color: whitesmoke ;
+    color: #516367;;
 } 
 
 h2 {
@@ -194,21 +204,15 @@ h2 {
 h4 {
     color: whitesmoke;
     font-size: 3rem;
-    padding-top: 3rem;
+    
 
 }
-/* 
-p {
+ 
+/* p {
     margin-bottom: 2em;
     line-height: 1.4rem;
-    /* color: whitesmoke; }
-    */
-
-
-
-
-
-
+} */
+    
 
 
 
@@ -238,7 +242,7 @@ p {
     background-image: url('/images/blissballs.jpg');
 }
 .img-6 {
-    background-image: url('/images/macaroons.jpg');
+    background-image: url('/images/tibione.jpg');
 }
 .img-7 {
     background-image: url('/images/oldschool.jpg');
@@ -285,15 +289,11 @@ header a {
     color:rgb(39, 39, 39);
 } 
 
-/* nav a:hover {
-    color: lightgrey;
-} */
-
 .hamburger-button {
     cursor: pointer;
     padding: 0.5rem;
     display: inline-block;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 2.5rem;
     line-height: 1.8;
     position: fixed;
@@ -301,19 +301,19 @@ header a {
     top: calc(5vw + .7rem);
     z-index: 1;
     /* color: #F1DABF; */
-    color: #f9f0e5;
+    /* color: #f9f0e5; */
+    color: #516367;
+    color: #C4D0D4;
+    color: #E7ECEE;
+    
   }
 
 /* Styles when the hamburger button is active  */
 
 .hamburger-button.active {
     color:#f9f0e5;
+    color: #516367;
   }
-
-/* .hamburger-button a:hover {
-    color: #c0ad92;
-} */
-
 
   .left-menu { 
     background-color: #414833;
