@@ -109,10 +109,12 @@ html {
 .bglightbrown   { background-color: #A68A64; }
 .bglightgreen   { background-color: #A4AC86; }
 .bglightergreen { background-color: #656D4A; }
-.bgmedgreen     { background-color: #414833; }
-/* .bgdarkgreen    { background-color: #333D29; } */
+.bgjungle       { background-color: #072120; }
 .bgdarkgreen    { background-color: #666c5b; }
 .bglitegreen    { background-color: #B6AD90; }
+.bgslategrey    { background-color: #54686A; }
+.bgdarkergrey   { background-color: #3D5254; }
+
 
 .textadd {
     /* color: #A68A64; */
@@ -132,6 +134,8 @@ html {
     background-position: 50% 17%;
     background-image: none; 
     background-color: #414833;
+    background-color: #54686A;
+    background-color: #3D5254;
     min-height: 30vh;
 
 }
@@ -152,6 +156,7 @@ html {
 
 .social-banner a:hover .fab {
     color: #A68A64;
+    transition: 1s;
 }
 
 
