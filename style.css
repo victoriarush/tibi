@@ -126,6 +126,7 @@ html {
     color: #516367;
     margin-bottom: 2em;
     line-height: 1.2;
+    text-align: center;
 }
 .social-banner { 
     background-position: 50% 17%;
@@ -191,7 +192,8 @@ h1{
     font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 2em;
-    color: #516367;;
+    color: #516367;
+    font-weight: 600;
 } 
 
 h2 {
