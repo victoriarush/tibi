@@ -126,7 +126,7 @@ html {
 }
 
 .textmission {
-    color: #516367;
+    color: white;
     margin-bottom: 2em;
     line-height: 1.2;
     text-align: center;
@@ -135,8 +135,8 @@ html {
     background-position: 50% 17%;
     background-image: none; 
     background-color: #414833;
-    background-color: #54686A;
-    background-color: #3D5254;
+    /* background-color: #54686A; */
+    /* background-color: #3D5254; */
     min-height: 30vh;
 
 }
@@ -188,30 +188,31 @@ h1{
     font-weight: 500;
     margin-top: 3vw;
     display: inline-block;
-    /* color: #F1DABF; */
+    color: white;
     /* color: #f9f0e5; */
     /* color: #4E6064; */
-    color: #516367;
-    color: #3D5254;
+    /* color: #516367; */
+    /* color: #3D5254; */
 }
  
  h3 { 
     font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 2em;
-    color: #516367;
+    color: white;
     font-weight: 600;
 } 
 
 h2 {
-    color:rgb(87, 82, 82);
+    /* color:rgb(87, 82, 82); */
+    color: white;
     font-size: 1.4rem;
     margin-bottom: 1em;
     font-weight: lighter;
 }
 
 h4 {
-    color: whitesmoke;
+    color: white;
     font-size: 3rem;
     
 
@@ -263,7 +264,7 @@ h4 {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/moodyocean.jpg');
+    background-image: url('/images/seagull.jpg');
 }
 .img-11 {
     background-image: url('/images/tibitwo.png');
@@ -311,10 +312,8 @@ header a {
     z-index: 1;
     /* color: #F1DABF; */
     /* color: #f9f0e5; */
-    color: #516367;
-    color: #C4D0D4;
-    color: #E7ECEE;
-    color: #627579;
+    color: white;
+    
     
   }
 
