@@ -37,21 +37,66 @@
     <!-- body - where all content goes -->
 
 <body class='home'>
+    
+    <!-- HEADER & ABOUT MENU -->
 
+    <header class="grid-center bglitegreen">
+        <div class="col-2"> </div>
+        <div class="col-8 center logo padded-1">
+            <a href="/">
+                <h1>  TiBs
+                </h1>
+            </a>
+        </div>
+        <div class="col-2 right">
+            <a class="hamburger-button"> &ne; </a>
+        </div>
+        
+            <!-- <nav class="">
+                <a href="#"> about </a>
+                <a href="#"> menu </a>
+                <a href="#"> catering </a>
+                <a href="#"> events </a>
+                <a href="#"> contact </a>
+            </nav> -->
+
+         <div class="left-menu grid-center-middle"> 
+            <nav> 
+                <a href="/index.html"> home  </a>
+                <a href="/about.html"> about </a>
+                <a href="#"> our world </a>
+                <a href="/menu.html"> menu </a>
+                <!-- <a href="#"> events </a> -->
+                <a href="#"> contact </a>
+            </nav>
+        </div> 
+
+        <div class="right-menu grid-center-middle"> 
+            <nav> 
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            </nav>
+        </div>
+       
+        
+        <div class="drop-menu"> 
+                <a href="#"> X </a> 
+        </div>
+    </header> 
     {{ content }}
 
     <!-- contact/map section -->
 
-    <section class="grid bgolive tall-40">
+    <footer class="grid bgolive tall-40">
         <div class="col-12-middle center padding-bottom-5w">
             <h4 class="padded-bottom-5w"> find us here </h4>
         </div>
         
-        <div class="col-6 right">
+        <div class="col-6_sm-12 right">
             <div class="img-13 landscape">   
             </div>
         </div>
-            <div class="col-4 textadd left">
+            <div class="col-4_sm-12 textadd left">
             <span> TiBs </span>
             <p> 10 Putiki Road </p>
             <p> Ostend </p>
@@ -59,9 +104,9 @@
             <p> 1081 </p>
             <p><a href="mailto:tibskitchen@gmail.com"> email: tibskitchen@gmail.com </a></p>
             <p><a href="tel:+64210682593"> phone: +64210682593 </a></p>
-            <nav> 
+            <nav class="socialnav"> 
                 <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
-                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                <a class="padded" href="#"> <i class="fa-brands fa-instagram"></i> </a>
             </nav>
         </div>
         
@@ -69,7 +114,7 @@
 
 
 
-    </section>
+    </footer>
 
 
 
