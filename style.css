@@ -509,9 +509,18 @@ footer p {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:800px) {
  .mobile-square {
      padding-bottom:100%;
+    }
+}
+
+@media (max-width:800px) {
+    .mobile-padding {
+        padding-left: 0;
+        padding-right:0;
+        padding-top: 1vh;
+        text-align: center;
     }
 }
 
