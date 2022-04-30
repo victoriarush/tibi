@@ -34,9 +34,20 @@
 </head> 
     
 
-<body>
+    <!-- body - where all content goes -->
 
-    <header class="grid-center bgolive margin-0">
+<body class='home'>
+    
+    <!-- HEADER & ABOUT MENU -->
+
+    <header class="grid-center bglitegreen">
+        <div class="col-2"> </div>
+        <div class="col-8 center logo padded-1">
+            <a href="/">
+                <h1>  TiBs
+                </h1>
+            </a>
+        </div>
         <div class="col-2 right">
             <a class="hamburger-button"> &ne; </a>
         </div>
@@ -49,12 +60,12 @@
                 <a href="#"> contact </a>
             </nav> -->
 
-         <div class="left-menu"> 
+         <div class="left-menu grid-center-middle"> 
             <nav> 
                 <a href="/index.html"> home  </a>
                 <a href="/about.html"> about </a>
+                <a href="#"> our world </a>
                 <a href="/menu.html"> menu </a>
-                <a href="#"> catering </a>
                 <!-- <a href="#"> events </a> -->
                 <a href="#"> contact </a>
             </nav>
@@ -72,66 +83,37 @@
                 <a href="#"> X </a> 
         </div>
     </header> 
-
-    <section class="bgolive padded-b-0 menu margin-b-0 grid-center">
+        <section class="bgolive padded-b-0 menu margin-b-0 grid-center">
         <div class="col-12 center">
             <h2 class="text-lg"> menu </h2>
         </div>
         <!-- First column  -->
         <div class="col-5_lg-6_sm-12 padded-2">
             <h3 class="menu-heading"> breakfast </h3>
-            <div class="grid">
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
+                <ul> 
+                    <li> 
+                <div class="grid">
+                    <div class="col-10 editable">
+                    <p> toast </p>
                 </div>
                 <div class="col-2 editable">
-                    <span class="price">$20 </span>
+                    <span class="price"> $20 </span>
                 </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
                 </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
+                </li>
+                
+                    <li> 
+                <div class="grid">
+                    <div class="col-10 editable">
+                    <p> toast </p>
                 </div>
                 <div class="col-2 editable">
-                    <span class="price">$20 </span>
+                    <span class="price"> $20 </span>
                 </div>
-            </div>
-            <div class="grid">
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
                 </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-            </div>
+                </li>
+                 
+                </ul> 
         </div>
 
         <!-- Second column  -->
@@ -204,3 +186,48 @@
 
 </body>
 
+
+
+    <!-- contact/map section -->
+
+    <footer class="grid bgolive tall-40">
+        <div class="col-12-middle center padding-bottom-5w">
+            <h4 class="padded-bottom-5w"> find us here </h4>
+        </div>
+        
+        <div class="col-6_sm-12 right">
+            <div class="img-13 landscape">   
+            </div>
+        </div>
+            <div class="col-4_sm-12 textadd left">
+            <span> TiBs </span>
+            <p> 10 Putiki Road </p>
+            <p> Ostend </p>
+            <p> Waiheke Island </p>
+            <p> 1081 </p>
+            <p><a href="mailto:tibskitchen@gmail.com"> email: tibskitchen@gmail.com </a></p>
+            <p><a href="tel:+64210682593"> phone: +64210682593 </a></p>
+            <nav class="socialnav"> 
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a class="padded" href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            </nav>
+        </div>
+        
+
+
+
+
+    </footer>
+
+
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/main.js"></script>
+
+
+
+</body>
+
+</html>
