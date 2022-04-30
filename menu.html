@@ -2,11 +2,20 @@
 layout: default
 sweet:
   - name: toast
+    description: very tasty
+    toppings:
+        - butter
+        - sugar
+        - fruit
     price: $20
   - name: toast
     price: $20
   - name: Muffin
     price: $20
+savoury:
+  - name: toast
+    price: $20
+    
 ---
 
 <section class="bgolive padded-b-0 menu margin-b-0 grid-center">
@@ -19,74 +28,41 @@ sweet:
                 <ul> {% for item in page.sweet %}
                     <li> 
                 <div class="grid">
-                    <div class="col-10 editable">
-                    <p> {{item.name}} </p>
+                    <div class="col-10">
+                    <h4> {{item.name}} </h4>
+                    <p> {{item.description}} </p>
+                    <ul> {% for toppings in item.toppings %} 
+                        <li> {{toppings}} </li>
+                        {% endfor %}</ul>
                 </div>
-                <div class="col-2 editable">
+                <div class="col-2">
                     <span class="price"> {{item.price}} </span>
                 </div>
                 </div>
                 </li>
                 {% endfor %} 
-                </ul> 
+                </ul>  
         </div>
 
         <!-- Second column  -->
         <div class="col-5_lg-6_sm-12 padded-2 mob-padded-t-0">
-            <h3 class="menu-heading"> lunch </h3>
+            <h3 class="menu-heading"> savoury </h3>
+            <ul> {% for item in page.savoury %}
+                <li> 
             <div class="grid">
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
-                <div class="col-10 editable">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price">$20 </span>
-                </div>
+                <div class="col-10">
+                <p> {{item.name}} </p>
             </div>
-                <div class="grid">
-                    <div class="col-10 editable">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">$20 </span>
-                    </div>
-                    <div class="col-10 editable">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">$20 </span>
-                    </div>
-                    <div class="col-10 editable">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id consequuntur sequi qui. Accusantium at excepturi. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">$20 </span>
-                    </div>
+            <div class="col-2">
+                <span class="price"> {{item.price}} </span>
             </div>
-        </div>
+            </div>
+            </li>
+            {% endfor %} 
+            </ul> 
+            </div>
+            
+            
         <div class="col-10_sm-12 padded-2 center">
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, illum, eius excepturi, consectetur vitae molestias voluptates eos deserunt similique maxime minus. Minus, iure? Quia animi vero nisi dolorum odio veniam!</p>
         </div>
