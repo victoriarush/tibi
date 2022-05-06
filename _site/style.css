@@ -280,6 +280,10 @@ p:last-child {
     margin-bottom: 0;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 li {
     color: white;
 }
@@ -526,6 +530,14 @@ footer p {
         text-align: center;
     }
 }
+
+@media (min-width: 816px ) {
+    .menu-cap{
+    max-width: 800px;
+    margin:1rem auto
+    }
+    
+    }
 
   
 
