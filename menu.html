@@ -1,50 +1,25 @@
 ---
 layout: default
-pancake:
-- name: pancake
-  description: Shredded buckwheat & millet pancake
-  toppings:
-    - caramelised banana
-    - seasonal fruit compote
-    - coconut yoghurt
-    - homemade granola crunch
-    - peanut, almond or hazelnut butter
-  price: $20
-
-porridge:
-- name: porridge (GF oats or rice flakes)
-  description: Apple crumble
-  toppings: 
-    - apple compote
-    - grilled pear
-    - dried cranberry
-    - vanilla flavoured coconut yoghurt
-    - homemade granola
-    - almond butter
-  price: $20
+menu:
+  - dishType: pancake
+    menu_item:
+    - name: Shredded buckwheat & millet  pancake
+      toppings:
+        - caramelised banana
+        - seasonal fruit compote
+        - coconut yoghurt
+        - homemade granola crunch
+        - peanut, almond or hazelnut butter
+      price: $20
+    - name: maple glazed pancake
+      toppings:
+        - caramelised banana
+        - seasonal fruit compote
+        - coconut yoghurt
+        - homemade granola crunch
+        - peanut, almond or hazelnut butter
+      price: $20
     
-- name: 
-  description: Banoffee 
-  toppings: 
-     - date caramel
-     - grilled bananas
-     - dried cranberry
-     - vanilla flavoured coconut yoghurt
-     - homemade granola
-     - almond butter
-  price: $20
-    
-- name: 
-  description: Jaffa (cacao-based)
-  toppings: 
-     - orange and grapefruit
-	 - plain coconut yoghurt
-	 - homemade granola
-	 - toasted walnut
-	 - almond butter
-	 - chocolate chips
-  price: $20
-
 ---
 
 <section class="bgolive padded-b-0 menu menu-cap margin-b-0 grid-center">
@@ -53,18 +28,21 @@ porridge:
         </div>
         <!-- First column  -->
         <div class="col-10 padded-2">
-                {% for item in page.pancake %}
+                {% for item in page.menu %}
+                <h3 class="menu-heading"> {{item.dishType}} </h3>
                 <div class="grid">
+                  {% for dish in item.menu_item %}
                     <div class="col-10">
-                        <h3 class="menu-heading"> {{item.name}} </h3>
-                    <p> {{item.description}} </p>
-                    <ul> {% for toppings in item.toppings %} 
+                        <h3 class="menu-heading"> {{dish.name}} </h3>
+                    <p> {{dish.description}} </p>
+                    <ul> {% for toppings in dish.toppings %} 
                         <li> {{toppings}} </li>
                         {% endfor %}</ul>
                 </div>
                 <div class="col-2">
-                    <span class="price"> {{item.price}} </span>
+                    <span class="price"> {{dish.price}} </span>
                 </div>
+                {% endfor %}
                 </div>
                 {% endfor %} 
                 </ul>  
