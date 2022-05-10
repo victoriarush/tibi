@@ -201,6 +201,10 @@ html {
       font-size: 2.5rem;
   }
 
+  .menu {
+      background-color: #414833;
+  }
+
   .lighttext p {
         color: white;
         margin-bottom: 1rem;
