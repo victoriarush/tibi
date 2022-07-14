@@ -133,9 +133,9 @@ html {
     padding-left: 5vw;
 }
 
-.textadd span {
+/* .textadd span {
     font-size: 3rem;
-}
+} */
 
 .textmission {
     color: white;
@@ -177,8 +177,8 @@ html {
   
   .price { 
       display: block;
-      font-weight: 400;
-      margin-top: 0.5rem;
+      font-weight: 500;
+      margin-top: 2.25rem;
       text-align: right;
       color: #B6AD90;
   }
@@ -301,6 +301,8 @@ li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
 }
 .img-1 {
     background-image: url('/images/tibi.jpg');
@@ -330,7 +332,9 @@ li {
     background-image: url('/images/greens.jpg');
 }
 .img-10 {
-    background-image: url('/images/moodyocean.jpg');
+    background-image: url('/images/foodtruck.jpg');
+    /* padding-bottom: 65%; */
+    background-position: bottom center;
 }
 .img-11 {
     background-image: url('/images/Tibi.jpg');
@@ -442,7 +446,7 @@ header a {
     color: #B6AD90; 
     letter-spacing: 1.5px;
     transition: 1s;
-    font-size: 11vw;
+    font-size: min(8vw, 8vh);
 }
 
 
@@ -492,6 +496,8 @@ header a {
       color: #746046;
   }
 
+ 
+
 /* ---------footer styles---------------- */
 
 .socialnav a {
@@ -516,6 +522,9 @@ footer p {
         bottom: initial;
         left: initial;
         right: 1vw;
+    }
+    .drop-menu.active a {
+        font-size: 5rem;
     }
 }
 
